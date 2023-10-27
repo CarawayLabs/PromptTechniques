@@ -1,58 +1,54 @@
-# PromptTechniques
-Demonstrating the use of different LLM Prompt Techniques that are available. I'll be leveraging Python and Semantic Kernel to produce this. 
+# PromptTechniques: A Practical Introduction to LLM Prompting
+Welcome to PromptTechniques, a hands-on guide designed to bring you up to speed with the different techniques to prompt Large Language Models effectively. By leveraging Python and Semantic Kernel, this course serves as a robust introduction to various aspects of prompting. Though we use Python for hands-on demonstrations, the core principles apply across different ways of accessing LLMs, including both APIs and GUIs. Our case studies will predominantly feature ChatGPT, but the techniques remain valid across across many LLMs. Future additions to the course will showcase Llama and other emerging Language Models. We are looking at you Google! 👀 Where's Gemini?!
 
 <details>
-  <summary>Prompting Basics / Best Practices</summary>
-  
-  ## Courtesy of Isa Fulford - Member of Technical Staff, OpenAI 
-  1. Principle 1: Write clear and specific instructions
-  2. Principle 2: Give the model time to “think”
-     * With some
-     * Sub bullets
+  <summary>Prompting Fundamentals and Best Practices</summary>
 
-  ## PromptEngineering.AI 
-  1. Give the LLM clear instructions. 
-     * Such as "Write", "Classify", "Summarize", "Translate", "Order"
-     * Sub bullets
+  ## Guidelines from OpenAI's Technical Staff
+  1. **Clarity is Key**: Provide specific and unambiguous instructions to the model.
+  2. **Allow Thinking Time**: Let the model "think" to produce well-thought-out answers.
 
-  2. Embrace Prompting as an iterative process. 
-     * Start simple.  
-     * Expect that it will take experiementation to get optimal results.
-  
-  3. Avoid saying what not to do but say what to do instead.
-     * Bad Prompt: "The following is an agent that recommends movies to a customer. DO NOT ASK FOR INTERESTS. DO NOT ASK FOR PERSONAL INFORMATION."
-     * Improved Prompt: "The following is an agent that recommends movies to a customer. The agent is responsible to recommend a movie from the top global trending movies. It should refrain from asking users for their preferences and avoid asking for personal information. If the agent doesn't have a movie to recommend, it should respond "Sorry, couldn't find a movie to recommend today."."
-  
+  ## Insights from PromptEngineering.AI 
+  1. **Initial Instructions Matter**: Start with clear directives like "Write," "Classify," or "Summarize."
+     * Repeating these at the end can often improve output. *(Source: Recent Studies)*
+  2. **Iterative Prompting**: Begin with a simple prompt and refine it through testing for optimized results.
+  3. **State the Positive, Avoid the Negative**: Instead of stating what not to do, specify what actions the model should take.
 
+      [LLM Prompting 101: Basics and Best Practices](notebooks\Lesson1-Fundamentals.ipynb)
 </details>
+
 
 <details>
   <summary>Basic Elements of a Prompt</summary>
   
-  ## A well written prompt will usually contain one or more of these elements. This helps the human better communicate with the LLM to achieve the desired results. 
-  1. Instruction - A specific task or instruction that you want the model to perform. 
-  2. Context - external information or additional context that can steer the model to better responses
-  3. Input Data - the input or question that we are interested to find a response for
-  4. Output Indicator  - the type or format of the output.
+  ## To achieve the desired output from a Large Language Model (LLM), consider incorporating the following elements in your prompt:
+  1. **Instruction**: What specific task do you want the model to undertake?
+  2. **Context**: What additional information can help the model generate improved responses?
+  3. **Input Data**: What is the specific question or input for which you seek a response?
+  4. **Output Indicator**: What is the desired output format or type?
 
-    Compose a poem embodying the spirit of extreme enduro dirt bike racing.
-    The poem should reflect the adventurous and relentless spirit of a dirt bike racer, akin to the whimsical yet profound style of Shel Silverstein.
-    The racer rides a Beta 300RR Two Stroke, has experience racing on multiple continents, and competes in a format called Extreme Enduro.
-    The poem should be concise, encapsulating the essence of the racer’s experience in less than 100 words.
+  ### Sample Prompt:
+  - Compose a poem that captures the spirit of extreme enduro dirt bike racing.
+  - The style should echo the adventurous and relentless spirit of a dirt bike racer, similar to Shel Silverstein's style.
+  - Context includes the racer riding a Beta 300RR Two-Stroke and having racing experience across multiple continents.
+  - The output should be a concise poem, no longer than 100 words.
 
+    [Get Hands on: Crafting Basic Prompts](notebooks\Lesson2-BasicElements.ipynb)
+  
 </details>
 
-<details>
-  <summary>Defining Roles</summary>
-  
-  ## This can enhance the interaction and improve the quality of output. 
-  1. Precision and Context: By specifying a role, you provide a clearer context and directive, which helps in tailoring the model's responses more accurately to the given scenario or task.
-  2. Control over Output: Roles can guide the model to exhibit certain behaviors or adhere to specified formats, aiding in achieving a more controlled and predictable output.
-  3. Creativity and Exploration -  Different roles can stimulate varied and creative responses from the model, offering a rich playground for exploring novel interactions and solutions. 
-  4. User Experience: Roles can make interactions more engaging and intuitive, improving the user's experience and satisfaction.
-  5. Domain-Specific Responses - Assigning a particular domain or expert role can steer the LLM to provide more specialized or knowledgeable responses.
 
-  ### Here are some example roles:
+<details>
+  <summary>Understanding Roles</summary>
+  
+  ## Why Define Roles?  
+  1. **Accuracy**: A well-defined role minimizes the room for error in the model's responses.
+  2. **Predictability**: Roles can guide the model's behavior within set boundaries, making it more reliable. 
+  3. **Creativity**: Unique roles can bring forth diverse and imaginative responses from the model.
+  4. **User Engagement**: Roles make interactions more dynamic and enjoyable.
+  5. **Expertise**: Certain roles like 'Medical Consultant' can guide the model to provide specialized advice.
+
+  ### Roles in Action:
   1. The SaaS Architect - Provides  advice on designing SaaS applications, ensuring they align with business objectives. 
   2. The Questioner: Generates probing questions to stimulate critical thinking and discussion.
   3. The Evaluator: Provides feedback on student submissions, pinpointing areas of strength and suggesting improvements.
@@ -64,20 +60,31 @@ Demonstrating the use of different LLM Prompt Techniques that are available. I'l
   9. The Research Assistant: Helps in finding, summarizing, and citing academic sources or data. 
   10. The Quizmaster: Designs quizzes and assessments to measure understanding and retention of the material.
 
+      [Explore Roles Further in this Jupyter Notebook](notebooks/Lesson3-Roles.ipynb)
     
 
 </details>
 
-
 <details>
-  <summary>Changing the format of information that is returned</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
+  <summary>Changing the Format of Returned Information</summary>
+  The format in which the Large Language Model (LLM) returns information can be of critical importance for a variety of functional and strategic reasons, especially in B2B and B2C SaaS applications where data needs to be ingested, analyzed, or presented in different forms. 
+
+  ## A Sampler
+  - **Power Point**: Build engaging presentations.
+  - **Markdown (MD)**: Write easy-to-read documents.
+  - **HyperText Markup Language (HTML)**: For web-based outputs.
+  - **JavaScript Object Notation (JSON)**: For data interchange.
+  - **Extensible Markup Language (XML)**: Useful for data storage.
+  - **Comma-Separated Values (CSV)**: Ideal for data manipulation.
+  - **Python**: Output in script form.
+  - **.Net C#**: For C# software integration.
+
+      [Lets go make some Power Point Decks!](notebooks/Lesson4-OutputFormats.ipynb)
+
+
 </details>
+
+
 
 <details>
   <summary>Custom Instructions in Chat GPT UI</summary>
@@ -101,6 +108,13 @@ Demonstrating the use of different LLM Prompt Techniques that are available. I'l
   4. Example instructions for a foodie.
      * I am on the paleo diet. I only eat whole foods. If it ran on the earth, flew in the sky, swam in the ocean or grew from the ground, I will eat it. No processed foods and no gluten are permitted in my diet.  
      * Anytime that I give you a recipe. I want you to adapt it to fit my dietary restrictions. 
+
+      **No Notebook Available** External links given below:
+
+      -[OpenAI Blog Post - Custom Instructions](https://openai.com/blog/custom-instructions-for-chatgpt)
+
+      -[OpenAI FAQ: Custom Instructions](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt)
+
 </details>
 
 <details>
@@ -124,7 +138,7 @@ Demonstrating the use of different LLM Prompt Techniques that are available. I'l
 </details>
 
 <details>
-  <summary>Changing the format of information that is returned</summary>
+  <summary>Using ChatGPT to as your brainstorming buddy to teach a topic. </summary>
   
   ## Heading
   1. A numbered
@@ -134,7 +148,7 @@ Demonstrating the use of different LLM Prompt Techniques that are available. I'l
 </details>
 
 <details>
-  <summary>Changing the format of information that is returned</summary>
+  <summary>Chaining Prompts</summary>
   
   ## Heading
   1. A numbered
@@ -142,3 +156,14 @@ Demonstrating the use of different LLM Prompt Techniques that are available. I'l
      * With some
      * Sub bullets
 </details>
+
+<details>
+  <summary>Different Prompt Theories / Approaches</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
