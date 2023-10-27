@@ -40,13 +40,32 @@ GitHub Links
 LinkedIn Course
 - [Introduction to Prompt Engineering for Generative AI](https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai/)
 
-Archive Research Papers
+ArXiv Research Papers
 
-[Google](https://www.google.com/)
+- [Chain of Verification](https://arxiv.org/abs/2309.11495)
 
 Cheet Sheets
 
 - [Hamna Aslam Kahn - LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7122557742166257665/)
+![Hamna Aslam Kahn - Cheet Sheet 1](resources/images/ChatGptCheatSheet.jpg)
+
+![Hamna Aslam Kahn - Cheet Sheet 2](resources/images/dataAnalysisCheetSheet.jpg)
+
+
+- [Zain Kahn](https://www.linkedin.com/in/zainkahn/)
+![Zain Kahn Cheat Sheet 1](resources/images/zainKahnCheatSheet.jpg)
+
+![Zain Kahn Cheat Sheet 2](resources/images/zainKahnCheatSheet2.jpg)
+
+
+- [Huxley Peckham](https://www.linkedin.com/in/huxley-peckham/)
+![Zain Kahn Cheat Sheet 1](resources\images\huxleyPeckham.jpg)
+
+- [Awais Khan](https://www.linkedin.com/in/awaiskhanli/)
+![awaisKhanCheetSheet Cheat Sheet](resources/images/awaisKhanCheetSheet.jpg)
+
+
+
 
 
 

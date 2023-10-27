@@ -85,7 +85,6 @@ Welcome to PromptTechniques, a hands-on guide designed to bring you up to speed 
 </details>
 
 
-
 <details>
   <summary>Custom Instructions in Chat GPT UI</summary>
   
