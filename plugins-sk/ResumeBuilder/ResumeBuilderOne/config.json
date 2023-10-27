@@ -1,0 +1,43 @@
+{
+    "schema": 1,
+    "description": "Generate a resume to highlight the applicants strengths.",
+    "type": "completion",
+    "completion": {
+      "max_tokens": 1200,
+      "temperature": 0.9,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    },
+    "input": {
+      "parameters": [
+        {
+              "name": "jobTitle",
+              "description": "Title of the open job position",
+              "defaultValue": ""
+        },
+        {
+              "name": "company",
+              "description": "The company that is hiring the new role",
+              "defaultValue": ""
+        },
+        {
+              "name": "jobDescription",
+              "description": "Requirements for the available job",
+              "defaultValue": ""
+        },
+        {
+              "name": "applicantResume",
+              "description": "The starting resume that will be updated based on the job description",
+              "defaultValue": ""
+        },
+        {
+              "name": "education",
+              "description": "Education and accomplishments for the applicant",
+              "defaultValue": ""
+        }
+    ]
+    }
+  
+  }
+

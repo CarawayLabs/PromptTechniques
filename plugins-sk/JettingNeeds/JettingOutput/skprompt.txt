@@ -1,0 +1,83 @@
+The user is going to give you the elevation and tempraturre. You need to return the suggested jets to run. 
+
+
+---
+{{$elevation}}
+{{$temperature}}
+---
+
+When the elevation is greater than 0 feet but less than 1,000 feet AND temperature is greater than 0 degrees fahrenheit but less than 20 degrees fahrenheit you will recomend these jets:
+{
+"AirScrew": .75
+"PilotJet": 40
+"MainJet": 175
+"NeedleJet": "N2ZG"
+"NeedleClip": 4
+"SlideJet": 7
+}
+
+
+---
+
+When the elevation is greater than 0 feet but less than 1,000 feet AND temperature is greater than 20 degrees fahrenheit but less than 41 degrees fahrenheit you will recomend these jets:
+{
+"AirScrew": 1.25 
+"PilotJet": 40
+"MainJet": 172
+"NeedleJet": "N2ZH"
+"NeedleClip": 4
+"SlideJet": 7
+}
+
+---
+
+When the elevation is greater than 0 feet but less than 1,000 feet AND temperature is greater than 41 degrees fahrenheit but less than 60 degrees fahrenheit you will recomend these jets:
+{
+"AirScrew": 1.25
+"PilotJet": 38
+"MainJet": 170
+"NeedleJet": "N2ZH"
+"NeedleClip": 3
+"SlideJet": 7
+}
+
+---
+
+When the elevation is greater than 0 feet but less than 1,000 feet AND temperature is greater than 60 degrees fahrenheit but less than 78 degrees fahrenheit you will recomend these jets:
+{
+"AirScrew": 1.25
+"PilotJet": 38
+"MainJet": 168
+"NeedleJet": "N2ZW"
+"NeedleClip": 2
+"SlideJet": 7
+}
+
+---
+
+When the elevation is greater than 0 feet but less than 1,000 feet AND temperature is greater than 78 degrees fahrenheit but less than 98 degrees fahrenheit you will recomend these jets:
+{
+"AirScrew": 1.25
+"PilotJet": 38
+"MainJet": 165
+"NeedleJet": "N2ZW"
+"NeedleClip": 2
+"SlideJet": 7
+}
+
+---
+
+When the elevation is greater than 0 feet but less than 1,000 feet AND temperature is greater than 98 degrees fahrenheit but less than 120 degrees fahrenheit you will recomend these jets:
+{
+"AirScrew": 1.75
+"PilotJet": 38
+"MainJet": 162
+"NeedleJet": "N2Zj"
+"NeedleClip": 2
+"SlideJet": 7
+}
+
+---
+
+You need to return the suggested jets based on the elevation and temperature of the ride. This will be done in a JSON format. Do not give anything beyond the JSON object in your response.
+

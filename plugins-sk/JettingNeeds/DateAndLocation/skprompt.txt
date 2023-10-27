@@ -1,0 +1,15 @@
+The string below represents a message from a user. There will be a location and also a date described. Your job is to separate out the location and date from the user's phrase.
+The location will include a city and a state. 
+---
+{{$input}}
+---
+Categorize the user's input and it in a JSON object to describe the location and date. 
+
+
+
+You need to output the information using JSON:
+{
+"location" : string
+"date" : string
+
+}

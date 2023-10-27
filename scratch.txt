@@ -1,0 +1,34 @@
+# PromptTechniques
+Demonstrating the use of different LLM Prompt Techniques that are available. I'll be leveraging Python and Semantic Kernel to produce this. 
+
+
+Prompting Basics / Best Practices
+Defining Roles
+Changing the format of information that is returned
+Examples of Summarization
+Examples of Inference
+Chaining Prompts
+Different Prompt Theories / Approaches
+
+
+Using ChatGPT to as your brainstorming buddy to teach a topic. 
+
+<details>
+  <summary>Changing the format of information that is returned</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
+<details>
+  <summary>Changing the format of information that is returned</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
